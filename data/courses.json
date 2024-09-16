@@ -1,0 +1,132 @@
+{
+    "category": [
+        {
+            
+                "title": "computer science",
+                "description": "Computing drives innovation in engineering, business, entertainment, education, and the sciences",
+                "link": "/courses/computer_science",
+                "image_cover": "/computer-science.png",
+                "video": "https://www.youtube.com/watch?v=CxGSnA-RTsA",
+                "label": "Computing is part of everything we do. Computing drives innovation in engineering, business, entertainment, education, and the sciences—and it provides solutions to complex, challenging problems of all kinds. Computer science is the study of computers and computational systems. It is a broad field which includes everything from the algorithms that make up software to how software interacts with hardware to how well software is developed and designed. Computer scientists use various mathematical algorithms, coding procedures, and their expert programming skills to study computer processes and develop new software and systems."
+            
+        },
+        {
+            
+                "title": "cybersecurity",
+                "description": "The Cyber Policy Portfolio focuses on building cyber capacity and expertise among policymakers by publishing in-depth policy research, conducting cyber simulation exercises",
+                "link": "/courses/cybersecurity",
+                "image_cover": "/cybersecurity.png",
+                "video": "https://www.youtube.com/watch?v=Yr0xPVFcf-U",
+                "label": "Cyber threats are a global risk that governments, the private sector and non-governmental organizations must deal with. Chatham House aims to build cyber capacity and expertise among policymakers via our International Security Programme’s Cyber Policy Portfolio and Journal of Cyber Policy.The Cyber Policy Portfolio focuses on building cyber capacity and expertise among policymakers by publishing in-depth policy research, conducting cyber simulation exercises and convening high-level meetings."
+            
+        },
+        {
+            
+                "title": "mathematics",
+                "description": "Math is a fundamental tool in computer science, providing a way of understanding and describing complex systems",
+                "link": "/courses/mathematics",
+                "image_cover": "/mathematics.png",
+                "video": "https://www.youtube.com/watch?v=UWOVipHUZaM",
+                "label": "Math is a fundamental tool in computer science, providing a way of understanding and describing complex systems and powerful problem-solving techniques. Mathematical concepts such as algorithms, data structures, and formal logic are essential for developing efficient, correct, and reliable software. Indeed, much of the research in computer science is focused on finding new ways to apply math to the field, whether it be developing new proofs for existing algorithms or discovering novel ways to solve difficult problems.3 Consequently, those interested in pursuing a career in computer science need a strong mathematical foundation."
+            
+        },
+        {
+            
+            "title": "data science",
+            "description": "Data science combines math and statistics, specialized programming, advanced analytics, artificial intelligence",
+            "link": "/courses/data_science",
+            "image_cover": "/data-science.png",
+            "video": "https://www.youtube.com/watch?v=RBSUwFGa6Fk",
+            "label": "Data science combines math and statistics, specialized programming, advanced analytics, artificial intelligence (AI) and machine learning with specific subject matter expertise to uncover actionable insights hidden in an organization’s data. These insights can be used to guide decision making and strategic planning. The accelerating volume of data sources, and subsequently data, has made data science is one of the fastest growing field across every industry. As a result, it is no surprise that the role of the data scientist was dubbed the “sexiest job of the 21st century” by Harvard Business Review (link resides outside ibm.com). Organizations are increasingly reliant on them to interpret data and provide actionable recommendations to improve business outcomes."
+        
+        }
+    ],
+    "computer_science": [
+        {
+            "title": "web-app development",
+            "description": "A web application (web app) is an application program that is stored on a remote server and delivered over the internet",
+            "link": "/courses/computer_science/web-app-dev",
+            "image_cover": "/computer-science.png",
+            "video": "https://www.youtube.com/watch?v=Hv3czsQh8tg",
+            "label": "A web application (web app) is an application program that is stored on a remote server and delivered over the internet through a browser interface. Web services are web apps by definition and many, although not all, websites contain web apps. Developers design web applications for a wide variety of uses and users, from an organization to an individual for numerous reasons. Commonly used web applications can include webmail, online calculators or e-commerce shops. While users can only access some web apps by a specific browser, most are available no matter the browser."
+        },
+        {
+            "title": "android-app development",
+            "description": "Android apps are software applications that run on mobile devices powered by the Android operating system",
+            "link": "/courses/computer_science/android-app-development",
+            "image_cover": "/computer-science.png",
+            "video": "https://www.youtube.com/watch?v=FjrKMcnKahY",
+            "label": "Android apps are software applications that run on mobile devices powered by the Android operating system. These apps are built for mobile devices and can be installed on smartphones and tablets. They’re also very good at using your device's hardware capabilities, including its touchscreen, camera, GPS, microphone and more."
+        },
+        {
+            "title": "graphics design",
+            "description": "...",
+            "link": "/courses/computer_science/graphics-design",
+            "image_cover": "/computer-science.png",
+            "video": "",
+            "label": ""
+        },
+        {
+            "title": "data science",
+            "description": "...",
+            "link": "/courses/computer_science/data-science",
+            "image_cover": "/data-sciene.png",
+            "video": "",
+            "label": ""
+        }
+    ],
+    "cybersecurity": [
+        {
+            "title": "dev-ops",
+            "description": "...",
+            "link": "/courses/cybersecurity/dev-ops",
+            "image_cover": "/cybersecurity.png",
+            "video": "",
+            "label": ""
+        },
+        {
+            "title": "ethical-hacking",
+            "description": "Ethical hacking is a process of detecting vulnerabilities in an application",
+            "link": "/courses/cybersecurity/ethical-hacking",
+            "image_cover": "/cybersecurity.png",
+            "video": "https://youtu.be/UKeuJ4Y3Ayk?si=du99oUZIBrz19fIg",
+            "label": "Ethical hacking is a process of detecting vulnerabilities in an application, system, or organization’s infrastructure that an attacker can use to exploit an individual or organization. They use this process to prevent cyberattacks and security breaches by lawfully hacking into the systems and looking for weak points. An ethical hacker follows the steps and thought process of a malicious attacker to gain authorized access and test the organization’s strategies and network."
+        }
+    ],
+    "mathematics": [
+        {
+            "title": "statistics",
+            "description": "...",
+            "link": "/courses/mathematics/statistics",
+            "image_cover": "/mathematics.png",
+            "video": "",
+            "label": ""
+        },
+        {
+            "title": "finacial-alogrithms",
+            "description": "...",
+            "link": "/courses/mathematics/finacial-alogrithms",
+            "image_cover": "/mathematics.png",
+            "video": "",
+            "label": ""
+        }
+    ],
+    "data_science": [
+        {
+            "title": "lab-operation",
+            "description": "...",
+            "link": "/courses/data_science/lab-operation",
+            "image_cover": "/data-sciene.png",
+            "video": "",
+            "label": ""
+        },
+        {
+            "title": "stational-operation",
+            "description": "...",
+            "link": "/courses/data_science/stational-operation",
+            "image_cover": "/data-science.png",
+            "video": "",
+            "label": ""
+        }
+    ]
+}

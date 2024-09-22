@@ -7,11 +7,11 @@ const SignupPage = () => {
     return(
         <div style={{
             display: "flex", flexDirection: "column", justifyContent: "center",
-            alignItems: "center", backgroundColor: "rgb(245,155,69)",
+            alignItems: "center", backgroundColor: "rgb(265, 255, 283)",
             fontFamily: "poppins"
         }} className="h-screen">
             <GenderSort />
-            <div className="flex relative items-center justify-center bg-[whitesmoke] rounded-lg flex-col
+            <div className="flex relative items-center justify-center bg-slate-900 rounded-lg flex-col
             h-[60%] w-[60%] md:w-[50%] md:justify-between md:flex-row md:p-2
             ">
                 <div className="py-2 w-3/4 rounded-lg flex border-2 border-gray-400 items-center justify-center uppercase
@@ -30,12 +30,3 @@ const SignupPage = () => {
     )
 }
 export default SignupPage;
-
-export const mailLogin = async (e) => {
-    e.preventdefault;
-    //===== FETCH API =======
-    const data = await fetch("/api/user").then((value) => {
-        return value.text()
-    })
-    console.log(data)    
-}

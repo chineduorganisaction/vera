@@ -1,22 +1,27 @@
-import mongoose from "mongoose"
 import { redirect } from "next/navigation"
-import User from "../schema/page"
-
-// create mongodb server
-mongoose.connect(
-    process.env.MONGODB_URI
-)
-
+import dbConnects from "../../lib/dbConnect/db"
+import User from "../schema/userSchema"
 
 // create user data with post request to database
 export async function POST(request) {
-    const { username, password, email, gender } = request.body
-    const user = await new User({
-        username,
-        password,
-        email,
-        gender
-    }).save()
+    // initialize db
+    await dbConnects()
 
-    return new Response("successfully registered!")
+    const body = await request.json()
+    const isExist = await User.findOne( {username: body.username} )
+    console.log(isExist)
+    if (isExist === null) {
+        const member = new User({
+            username: body.username,
+            password: body.password,
+            email: body.email,
+            gender: body.gender
+        })
+        await member.save()
+        console.log(member.username + ", your account has been created")
+        return new Response(JSON.stringify(member.username))
+    } else {
+        return new Response("already exist")
+    }
+    
 }

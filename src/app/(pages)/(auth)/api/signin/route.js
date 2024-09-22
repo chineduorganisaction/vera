@@ -1,13 +1,18 @@
-import { redirect } from "next/navigation"
-import User from "../schema/page"
+import dbConnects from "../../lib/dbConnect/db"
+import User from "../schema/userSchema"
 
 // search for existing user
-export function POST(request, response) {
-    const user = User.findOne( request.body.username )
-    if(user === "") {
-        return redirect("/signup")
+export async function POST(request) {
+    // initialize db
+    await dbConnects()
+
+    const body = await request.json()
+    const user = await User.findOne( {username: body.username} )
+    console.log(user)
+    if(user !== null && user.password === body.password) {
+        return new Response(JSON.stringify(user.username))
     }
     else{
-        return Response.json({user})
+        return new Response("no user found, create account")
     }
 }

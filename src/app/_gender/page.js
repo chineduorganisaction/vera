@@ -11,7 +11,7 @@ const GenderSort = () => {
         useEffect(
             () => {
                 setValueState(currentGender);
-            }, []
+            }, [currentGender]
         )
     }
     function sortGender(e) {

@@ -6,14 +6,15 @@ const GenderSort = () => {
     const router = useRouter()
     const [valueState, setValueState] = useState("")
 
-    if (typeof window !== "undefined"){
-        const currentGender = localStorage.getItem("gender");
-        useEffect(
-            () => {
-                setValueState(currentGender);
-            }, [currentGender]
-        )
-    }
+    useEffect(
+        () => {
+            if (typeof window !== "undefined"){
+                const currentGender = localStorage.getItem("gender");
+                setValueState(currentGender)
+            }
+        }, [valueState]
+    )
+    
     function sortGender(e) {
         if (e.target.name === "female"){
             localStorage.setItem("gender", e.target.name)

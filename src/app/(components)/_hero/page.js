@@ -11,7 +11,7 @@ const HeroContentPage = () => {
         <div className="flex md:w-1/2 py-4 md:py-0 flex-wrap">
             {
                 hero.map((value, index, array) => {
-                    return <img src={value} key={index} className="w-full md:w-1/3 rounded-xl p-2" />
+                    return <img src={value} alt={value} key={index} className="w-full md:w-1/3 rounded-xl p-2" />
                 })
             }
         </div>

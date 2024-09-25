@@ -10,6 +10,7 @@ export async function POST(request) {
     const user = await User.findOne( {username: body.username} )
     console.log(user)
     if(user !== null && user.password === body.password) {
+        localStorage.setItem("username", JSON.stringify(user.username))
         return new Response(JSON.stringify(user.username))
     }
     else{
